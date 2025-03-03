@@ -1,91 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terraria</title>
-    
 </head>
+
 <body>
     <style>
         @font-face {
-  font-family: terrariaFont;
-  src: url("fonts/ANDYB.TTF");
-}
-        body{
-            background:url("images/bg.png") no-repeat center center fixed;
+            font-family: terrariaFont;
+            src: url("fonts/ANDYB.TTF");
+        }
+
+        body {
+            background: url("images/bg.png") no-repeat center center fixed;
             background-size: cover;
             font-family: terrariaFont;
+            color: white;
+            font-size: 24px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
         }
-        .images{
-          width: 12%; 
-          height: 12%;
-          border-color: black;
-          border-style:solid;
-          border-width: 2%;
-        }
-        .content{
+
+        .content {
             background-color: rgba(56, 58, 134, 0.7);
-    padding: 10px;
-    border-radius: 15px;
-    border-color: rgba(28, 27, 60, 0.7);
-    border-style: solid;
-    display: inline-block;
-    min-width: 50%;
-    max-width: 75%;
-    color: white;
-    font-size: 24px;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+            padding: 10px;
+            border-radius: 15px;
+            border-color: rgba(28, 27, 60, 0.7);
+            border-style: solid;
+            display: inline-block;
+            min-width: 50%;
+            max-width: 75%;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        footer{
+           min-width: 100%; 
+           background-color: rgb(72, 62, 108);
+           margin: -5%;
+           margin-top: 0%;
+           min-height: 50px;
+        }
+        a{
+            font-family: terrariaFont;
+            color: white;
+            font-size: 24px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
         }
     </style>
     <center>
         <header>
             <img src="images/custom-terraria-logo.png" style="width: 50%;">
         </header>
-        <br>
-        <br>
+        <br><br>
         <div class="content">
-            <h3>Esta es una guía para aquellos y aquellas que quieran informarse un poco antes de comenzar a jugar Terraria sin saber tanto acerca de este título.    
-            </h3>
+            <h3>Esta es una guía para aquellos y aquellas que quieran informarse un poco antes de comenzar a jugar
+                Terraria sin saber tanto acerca de este título.</h3>
         </div>
-        <br>
-        <br>
+        <br><br>
         <div class="content">
-            <img src="images/create player.webp"   width="400" height="300"  >  
-            <h3>En Terraria para comenzar uno tiene que crear su propio personaje, 
-                este personaje no solo podra jugar en un mundo podra 
-                jugar en cualquiera permitiendote buscar entre varios 
-                mundos los elementos que no encuentres en tu mundo original. 
-            </h3>
-                <h3>
-                Ademas de lo estetico puedes modificar la dificultad de tu personaje:
-                    </h3>
-            <h3><viaje style="color: rgb(255, 137, 186);">Viaje:</viaje> en este modo no pierdes nada al morir y puedes duplicar objetos pero solo puedes jugar a mundos que tengan esta misma dificultad 
-            </h3>
-            <h3><clasico style="color: rgb(65, 217, 255);">Clasico:</clasico> en este modo cuando mueres solo pierdes parte de las monedas de tu inventario. 
-            </h3>
-            <h3><Medio style="color: rgb(148, 108, 0);">Nucleo Medio:</Medio> en este modo cuando mueres solo pierdes todo lo que tenias de tu inventario.
-            </h3>
-            <h3><Extremo style="color: rgb(190, 60, 0);">Extremo:</Extremo> en este modo cuando mueres tu personage no podra revivir.
-            </h3>
+            <img src="images/create player.webp" width="400" height="300">
+            <h3>En Terraria para comenzar uno tiene que crear su propio personaje. Este personaje no solo podrá jugar en
+                un mundo, sino que podrá jugar en cualquiera, permitiéndote buscar entre varios mundos los elementos que
+                no encuentres en tu mundo original.</h3>
+            <h3>Además de lo estético, puedes modificar la dificultad de tu personaje:</h3>
+            <ul>
+                <li><span style="color: rgb(255, 137, 186);">Viaje:</span> No pierdes nada al morir y puedes duplicar
+                    objetos, pero solo puedes jugar en mundos de esta misma dificultad.</li>
+                <li><span style="color: rgb(65, 217, 255);">Clásico:</span> Al morir, solo pierdes parte de las monedas
+                    de tu inventario.</li>
+                <li><span style="color: rgb(148, 108, 0);">Medio Núcleo:</span> Pierdes todo lo que llevabas en el
+                    inventario.</li>
+                <li><span style="color: rgb(190, 60, 0);">Extremo:</span> Tu personaje no podrá revivir.</li>
+            </ul>
         </div>
-        <br>
-        <br>
+        <br><br>
         <div class="content">
             <img src="images/create world.webp" alt="">
-            <h3>En Terraria cuando crea su mundo tienes la opcion de elegir el nombre, la semilla, el tamaño, la dificultad
-                (<viaje style="color: rgb(255, 137, 186);">Viaje</viaje>, <clasico style="color: rgb(65, 217, 255);">Clasico</clasico>, <Experto style="color: rgb(255, 187, 0);">Experto</Experto> y <Maestro style="color: rgb(190, 60, 0);">Maestro</Maestro>) y que infeccion quieres(la infeccion es elbioma que infecta almundo hay 2
-                la <Corrupcion style="color: rgb(138, 62, 182);">Corrupcion</Corrupcion> y el <Carmesi style="color: rgb(177, 0, 0);">Carmesi</Carmesi> siendo la unica diferencia que no podras optener algunas cosas y tendras que pelear con un boss diferente aunque casi lo mismo)</h3>
+            <h3>En Terraria, al crear un mundo puedes elegir su nombre, semilla, tamaño, dificultad y el tipo de
+                infección.</h3>
+            <h3>Las dificultades son:</h3>
+            <ul>
+                <li><span style="color: rgb(255, 137, 186);">Viaje</span></li>
+                <li><span style="color: rgb(65, 217, 255);">Clásico</span></li>
+                <li><span style="color: rgb(255, 187, 0);">Experto</span></li>
+                <li><span style="color: rgb(190, 60, 0);">Maestro</span></li>
+            </ul>
+            <h3>Las infecciones son biomas que que se van propagando por el mundo y corropen todo a su paso siendo estas
+                las infecciones:</h3>
+            <ul  style="display: flex; position: relative;">
+                <img src="images/biomes/BiomeBannerCorruption.webp" width="100px" height="75px"><li style="margin-top: 1.5%;">  <span style="color: rgb(138, 62, 182);">Corrupción:</span> Sus enemigos son más resistentes y sus
+                    objetos se centran en el daño prolongado.</li>
+                    <img src="images/biomes/Crimson_background_3.webp" width="100px" height="75px">  <li style="margin-top: 1.5%;"><span style="color: rgb(177, 0, 0);">Carmesí:</span> Sus enemigos hacen más daño y sus objetos se
+                    centran en ataques más agresivos.</li>
+            </ul>
         </div>
-        <br>
-        <br>
+        <br><br>
         <div class="content">
+            <h3>Primeros pasos</h3>
+            <p>Al iniciar, recolecta madera talando árboles y fabrica tus primeras herramientas. Construye un refugio
+                básico para protegerte de los enemigos nocturnos. Busca minerales como hierro y plata para mejorar tu
+                equipo.</p>
+        </div>
+        <br><br>
+        <div class="content">
+            <h3>El Guía</h3>
+            <img src="images/bosses && guide/Guide.png" width="75px" height="160px">
+            <p>El primer NPC que encontrarás en Terraria es el Guía. Este personaje te dará consejos sobre cómo jugar y
+                sugerencias sobre qué hacer con los materiales que obtengas. Además, si le das un objeto, te dirá para
+                qué sirve y qué se puede fabricar con él.</p>
+            <p>Es un personaje clave para progresar, ya que su presencia es necesaria para invocar a la Muro Carnoso, el
+                jefe que desbloquea el Modo Difícil. Si el Guía muere, regresará después de un tiempo siempre que haya
+                una casa libre en tu mundo.</p>
+        </div>
+        <br><br>
+        <div class="content">
+            <h3>Primeros jefes</h3>
+            <p>Los primeros jefes a enfrentar son:</p>
+            <ul>
+                <li><span style="color: rgb(182, 62, 92);">Ojo de Cthulhu:</span><img src="images/bosses && guide/Eye_of_Cthulhu_(Phase_1).gif"> <br> Aparece automáticamente si tienes al
+                    menos 200 de vida y ciertas condiciones se cumplen. También se puede invocar con una Suspicious
+                    Looking Eye durante la noche. Se encuentra en la superficie del mundo.</li>
+                    <br>
+                <li><span style="color: rgb(138, 62, 182);">Devorador de Mundos <img src="images/bosses && guide/Eater_of_Worlds.webp"></span> <br>(Corrupción): Se encuentra en el
+                    bioma de Corrupción y se invoca destruyendo tres Orbes Sombríos o usando Carne Podrida. Es un jefe
+                    largo y segmentado que ataca en patrones de embestida.</li>
+                    <br>
+                <li><span style="color: rgb(177, 0, 0);">Cerebro de Cthulhu</span> <img src="images/bosses && guide/Brain_of_Cthulhu_(First_Phase).gif"> <br> (Carmesí): Se encuentra en el bioma
+                    Carmesí y se invoca destruyendo tres Corazones Carmesí o usando una Espina Sangrienta. Se rodea de
+                    criaturas pequeñas llamadas Servidores del Cerebro antes de su segunda fase.</li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="content">
+            <h3>El Infierno</h3>
+            <img src="images/biomes/nether.webp" width="250" height="200">
+            <p>El Infierno es la capa más profunda del mundo de Terraria. Aquí encontrarás peligrosas criaturas, como
+                los Demonios y los Murciélagos de Lava, además de estructuras llamadas Casas del Inframundo, donde
+                puedes encontrar cofres con poderosos objetos.</p>
+                <div style="display: flex;">
+                    <p style="margin-top: 10%;">La <span style="color: rgb(255, 0, 0);">Muro Carnoso</span>, el jefe que desbloquea el Modo Difícil, se
+                        encuentra aquí y solo puede ser invocado lanzando una Muñeca Vudú Guía a la lava. Una vez que lo
+                        derrotes, el mundo cambiará drásticamente y se activarán nuevos desafíos.</p>
+                    <img src="images/bosses && guide/Wall_of_Flesh.gif">
+                </div>
 
         </div>
-</center>
-<script>
-
-</script>
+        <br><br>
+        <div class="content">
+            <h3>Jefes del Modo Difícil</h3>
+            <p>Los jefes que debes derrotar en esta fase incluyen:</p>
+            <ul>
+                <li>Los jefes mecánicos: <span style="color: rgb(255, 187, 0);">El Destructor</span> <img src="images/bosses && guide/The_Destroyer.png"  width="20%" height="3%"> (invocado con un
+                    Mecanismo de Gusano, aparece en la superficie durante la noche), <span
+                        style="color: rgb(255, 187, 0);">Los Gemelos</span> <img src="images/bosses && guide/The_Twins.png" width="75px" height="75px"> (invocados con Óptica Mecánica, combate
+                    aéreo en la noche) y <span style="color: rgb(255, 187, 0);">Skeletron Prime</span> <img src="images/bosses && guide/Skeletron_Prime.png" width="75px" height="75px"> (invocado con un
+                    Cráneo Mecánico, un jefe con múltiples brazos).</li>
+                <li><span style="color: rgb(34, 177, 76);">Plantera:</span> <img src="images/bosses && guide/Plantera_(First_form).gif" width="75px" height="75px"> Se encuentra en la Selva subterránea y se
+                    invoca destruyendo un Bulbo de Plantera, el cual aparece tras vencer a los jefes mecánicos.</li>
+                <li><span style="color: rgb(255, 170, 0);">Gólem:</span>  <img src="images/bosses && guide/Golem.png" width="75px" height="75px"> Se encuentra dentro del Templo de la Selva y se
+                    invoca con una Llave del Templo. Es un jefe con patrones de ataque predecibles pero de gran
+                    resistencia.</li>
+            </ul>
+        </div>
+        <br><br>
+        <div class="content">
+            <h3>Moon Lord</h3>
+            <img src="images/bosses && guide/Moon_Lord.webp" width="300" height="325">
+            <p>Es el jefe final del juego. Tras vencer al <span style="color: rgb(255, 255, 0);">Cultista
+                    Lunático</span><img src="images/bosses && guide/Lunatic_Cultist.gif" width="75" height="75">  en la Mazmorra y destruir los cuatro Pilares Lunares (Solar <img src="images/bosses && guide/Solar_Pillar.png" width="30" height="60"> , Vórtice <img src="images/bosses && guide/Vortex_Pillar.png" width="30" height="60">, Nebular <img src="images/bosses && guide/Nebula_Pillar.png" width="30" height="60"> y
+                Estelar  <img src="images/bosses && guide/Stardust_Pillar.png" width="30" height="60">), se invocará automáticamente. Es crucial contar con armas de largo alcance y una arena de
+                combate bien diseñada.</p>
+        </div>
+        <footer>
+            Hecho por Franco Pedrazzi. Si quieres más información sobre Terraria, visita la 
+            <a href="https://terraria.fandom.com/wiki/Terraria_Wiki" target="_blank">wiki de Terraria</a>.
+        </footer>
+    </center>
 </body>
+
 </html>
