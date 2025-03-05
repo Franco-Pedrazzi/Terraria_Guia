@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Terraria-Emblem.webp">
     <title>Terraria</title>
 </head>
 
@@ -11,7 +12,7 @@
     <style>
         @font-face {
             font-family: terrariaFont;
-            src: url("fonts/ANDYB.TTF");
+            src: url("extras/ANDYB.TTF");
         }
 
         body {
@@ -39,30 +40,48 @@
             list-style-type: none;
             padding-left: 0;
         }
-        footer{
-           min-width: 100%; 
-           background-color: rgb(72, 62, 108);
-           margin: -5%;
-           margin-top: 0%;
-           min-height: 50px;
+
+        footer {
+            min-width: 100%;
+            background-color: rgb(72, 62, 108);
+            margin: -5%;
+            margin-top: 0%;
+            min-height: 50px;
         }
-        a{
+
+        a {
             font-family: terrariaFont;
             color: white;
             font-size: 24px;
             -webkit-text-stroke-width: 1px;
             -webkit-text-stroke-color: black;
         }
+
+        .title {
+            width: 50%;
+        }
+
+        :hover.title {
+            width: 55%;
+            transform: rotate(5deg);
+            opacity: 90%;
+        }
     </style>
+
     <center>
+        <audio id="music">
+            <source src="extras/TerrariaMusic.mp3"  type="audio/mpeg">
+          </audio>
         <header>
-            <img src="images/custom-terraria-logo.png" style="width: 50%;">
+            <img class="title" src="images/custom-terraria-logo.png" onclick="music()">
+            <br><br>
+            <div class="content">
+                <h3>Bienvenido a esta mini wiki de Terraria, donde aprenderás lo básico para comenzar tu aventura, desde
+                    crear tu personaje hasta saber cuales son los jefes principales que deves enfrentra para avanzar en la
+                    aventura.</h3>
+            </div>
         </header>
-        <br><br>
-        <div class="content">
-            <h3>Esta es una guía para aquellos y aquellas que quieran informarse un poco antes de comenzar a jugar
-                Terraria sin saber tanto acerca de este título.</h3>
-        </div>
+ 
         <br><br>
         <div class="content">
             <img src="images/create player.webp" width="400" height="300">
@@ -94,10 +113,14 @@
             </ul>
             <h3>Las infecciones son biomas que que se van propagando por el mundo y corropen todo a su paso siendo estas
                 las infecciones:</h3>
-            <ul  style="display: flex; position: relative;">
-                <img src="images/biomes/BiomeBannerCorruption.webp" width="100px" height="75px"><li style="margin-top: 1.5%;">  <span style="color: rgb(138, 62, 182);">Corrupción:</span> Sus enemigos son más resistentes y sus
+            <ul style="display: flex; position: relative;">
+                <img src="images/biomes/BiomeBannerCorruption.webp" width="100px" height="75px">
+                <li style="margin-top: 1.5%;"> <span style="color: rgb(138, 62, 182);">Corrupción:</span> Sus enemigos
+                    son más resistentes y sus
                     objetos se centran en el daño prolongado.</li>
-                    <img src="images/biomes/Crimson_background_3.webp" width="100px" height="75px">  <li style="margin-top: 1.5%;"><span style="color: rgb(177, 0, 0);">Carmesí:</span> Sus enemigos hacen más daño y sus objetos se
+                <img src="images/biomes/Crimson_background_3.webp" width="100px" height="75px">
+                <li style="margin-top: 1.5%;"><span style="color: rgb(177, 0, 0);">Carmesí:</span> Sus enemigos hacen
+                    más daño y sus objetos se
                     centran en ataques más agresivos.</li>
             </ul>
         </div>
@@ -107,6 +130,14 @@
             <p>Al iniciar, recolecta madera talando árboles y fabrica tus primeras herramientas. Construye un refugio
                 básico para protegerte de los enemigos nocturnos. Busca minerales como hierro y plata para mejorar tu
                 equipo.</p>
+            <br>
+            <h2>Minerales que se pueden conseguir</h2>
+            <b style="color: rgb(196, 157, 0);">Cobre/Estaño</b><br>
+            <b style="color: rgb(255, 214, 137);">Hierro/Plomo</b><br>
+            <b style="color: rgb(137, 222, 255);">Plata/Tungsteno</b><br>
+            <b style="color: rgb(255, 230, 0);">Oro/Platino</b><br>
+            <b style="color: rgb(183, 104, 0);">Meteorito</b><br>
+
         </div>
         <br><br>
         <div class="content">
@@ -115,7 +146,7 @@
             <p>El primer NPC que encontrarás en Terraria es el Guía. Este personaje te dará consejos sobre cómo jugar y
                 sugerencias sobre qué hacer con los materiales que obtengas. Además, si le das un objeto, te dirá para
                 qué sirve y qué se puede fabricar con él.</p>
-            <p>Es un personaje clave para progresar, ya que su presencia es necesaria para invocar a la Muro Carnoso, el
+            <p>Es un personaje clave para progresar, ya que su presencia es necesaria para invocar a el Muro Carnoso, el
                 jefe que desbloquea el Modo Difícil. Si el Guía muere, regresará después de un tiempo siempre que haya
                 una casa libre en tu mundo.</p>
         </div>
@@ -124,17 +155,29 @@
             <h3>Primeros jefes</h3>
             <p>Los primeros jefes a enfrentar son:</p>
             <ul>
-                <li><span style="color: rgb(182, 62, 92);">Ojo de Cthulhu:</span><img src="images/bosses && guide/Eye_of_Cthulhu_(Phase_1).gif"> <br> Aparece automáticamente si tienes al
+                <li><span style="color: rgb(182, 62, 92);">Ojo de Cthulhu:</span><img
+                        src="images/bosses && guide/Eye_of_Cthulhu_(Phase_1).gif"> <br> Aparece automáticamente si
+                    tienes al
                     menos 200 de vida y ciertas condiciones se cumplen. También se puede invocar con una Suspicious
                     Looking Eye durante la noche. Se encuentra en la superficie del mundo.</li>
-                    <br>
-                <li><span style="color: rgb(138, 62, 182);">Devorador de Mundos <img src="images/bosses && guide/Eater_of_Worlds.webp"></span> <br>(Corrupción): Se encuentra en el
+                <br>
+                <li><span style="color: rgb(138, 62, 182);">Devorador de Mundos <img
+                            src="images/bosses && guide/Eater_of_Worlds.webp"></span> <br>(Corrupción): Se encuentra en
+                    el
                     bioma de Corrupción y se invoca destruyendo tres Orbes Sombríos o usando Carne Podrida. Es un jefe
                     largo y segmentado que ataca en patrones de embestida.</li>
-                    <br>
-                <li><span style="color: rgb(177, 0, 0);">Cerebro de Cthulhu</span> <img src="images/bosses && guide/Brain_of_Cthulhu_(First_Phase).gif"> <br> (Carmesí): Se encuentra en el bioma
+                <br>
+                <li><span style="color: rgb(177, 0, 0);">Cerebro de Cthulhu</span> <img
+                        src="images/bosses && guide/Brain_of_Cthulhu_(First_Phase).gif"> <br> (Carmesí): Se encuentra en
+                    el bioma
                     Carmesí y se invoca destruyendo tres Corazones Carmesí o usando una Espina Sangrienta. Se rodea de
                     criaturas pequeñas llamadas Servidores del Cerebro antes de su segunda fase.</li>
+                <br>
+                <li>estos jefes te sueltan estos minerales <b style="color: rgb(255, 0, 204);">Demonita</b>/<b
+                        style="color: rgb(255, 0, 0);">Carmesí</b> dependiendo de la infeccion elegida ademas sueltan
+                    escamas para hacerse la armadura(el ojo no) </li>
+                <br>
+
             </ul>
         </div>
         <br><br>
@@ -143,13 +186,20 @@
             <img src="images/biomes/nether.webp" width="250" height="200">
             <p>El Infierno es la capa más profunda del mundo de Terraria. Aquí encontrarás peligrosas criaturas, como
                 los Demonios y los Murciélagos de Lava, además de estructuras llamadas Casas del Inframundo, donde
-                puedes encontrar cofres con poderosos objetos.</p>
-                <div style="display: flex;">
-                    <p style="margin-top: 10%;">La <span style="color: rgb(255, 0, 0);">Muro Carnoso</span>, el jefe que desbloquea el Modo Difícil, se
-                        encuentra aquí y solo puede ser invocado lanzando una Muñeca Vudú Guía a la lava. Una vez que lo
-                        derrotes, el mundo cambiará drásticamente y se activarán nuevos desafíos.</p>
-                    <img src="images/bosses && guide/Wall_of_Flesh.gif">
-                </div>
+                puedes encontrar cofres con poderosos objetos.Ademas se puede conseguir <b
+                    style="color: rgb(177, 0, 0);">Hellstone</b> que es el mejor mineral pre modo dificil</p>
+
+
+            <div style="display: flex;">
+                <p style="margin-top: 10%;">La <span style="color: rgb(255, 0, 0);">Muro Carnoso</span>, el jefe que
+                    desbloquea el Modo Difícil, se
+                    encuentra aquí y solo puede ser invocado lanzando una Muñeca Vudú Guía a la lava. Una vez que lo
+                    derrotes, el mundo cambiará drásticamente y se activarán nuevos desafíos.</p>
+                <img src="images/bosses && guide/Wall_of_Flesh.gif">
+                <br>
+
+            </div>
+
 
         </div>
         <br><br>
@@ -157,16 +207,37 @@
             <h3>Jefes del Modo Difícil</h3>
             <p>Los jefes que debes derrotar en esta fase incluyen:</p>
             <ul>
-                <li>Los jefes mecánicos: <span style="color: rgb(255, 187, 0);">El Destructor</span> <img src="images/bosses && guide/The_Destroyer.png"  width="20%" height="3%"> (invocado con un
+                <li>Los jefes mecánicos: <span style="color: rgb(255, 187, 0);">El Destructor</span> <img
+                        src="images/bosses && guide/The_Destroyer.png" width="20%" height="3%"> (invocado con un
                     Mecanismo de Gusano, aparece en la superficie durante la noche), <span
-                        style="color: rgb(255, 187, 0);">Los Gemelos</span> <img src="images/bosses && guide/The_Twins.png" width="75px" height="75px"> (invocados con Óptica Mecánica, combate
-                    aéreo en la noche) y <span style="color: rgb(255, 187, 0);">Skeletron Prime</span> <img src="images/bosses && guide/Skeletron_Prime.png" width="75px" height="75px"> (invocado con un
+                        style="color: rgb(255, 187, 0);">Los Gemelos</span> <img
+                        src="images/bosses && guide/The_Twins.png" width="75px" height="75px"> (invocados con Óptica
+                    Mecánica, combate
+                    aéreo en la noche) <br> <span style="color: rgb(255, 187, 0);">Skeletron Prime</span> <img
+                        src="images/bosses && guide/Skeletron_Prime.png" width="75px" height="75px"> (invocado con un
                     Cráneo Mecánico, un jefe con múltiples brazos).</li>
-                <li><span style="color: rgb(34, 177, 76);">Plantera:</span> <img src="images/bosses && guide/Plantera_(First_form).gif" width="75px" height="75px"> Se encuentra en la Selva subterránea y se
+                <h3>ademas estan estos jefes se desbloqueran despues de vencer a un jefe mecanico</h3>
+                <li><span style="color: rgb(34, 177, 76);">Plantera:</span> <img
+                        src="images/bosses && guide/Plantera_(First_form).gif" width="75px" height="75px"> Se encuentra
+                    en la Selva subterránea y se
                     invoca destruyendo un Bulbo de Plantera, el cual aparece tras vencer a los jefes mecánicos.</li>
-                <li><span style="color: rgb(255, 170, 0);">Gólem:</span>  <img src="images/bosses && guide/Golem.png" width="75px" height="75px"> Se encuentra dentro del Templo de la Selva y se
+                <li><span style="color: rgb(255, 170, 0);">Gólem:</span> <img src="images/bosses && guide/Golem.png"
+                        width="75px" height="75px"> Se encuentra dentro del Templo de la Selva y se
                     invoca con una Llave del Templo. Es un jefe con patrones de ataque predecibles pero de gran
                     resistencia.</li>
+                <br>
+                <li>tras vencer al muro de carne nos dara un martillo capas de romper unas estructuras que al romperse
+                    aparecen estos minerales <b style="color: rgb(177, 0, 0);">Cobalto/Palladium</b><br>
+                    <b style="color: rgb(255, 0, 212);">Mithril/Orichalcum</b><br>
+                    <b style="color: rgb(177, 0, 91);">Adamantita/Titanium</b><br>
+                </li>
+
+                <li>tras vencer a un jefe mecanico el nos dara <b style="color: rgb(145, 177, 0);">Hallowed</b><br></li>
+
+                <li>y podremos picar <b style="color: rgb(10, 120, 0);">Chlorophyte</b><br> en las cuevas de la jungla
+                    con
+                    un pico sagrado siendo este uno de los mejores minerales</li>
+
             </ul>
         </div>
         <br><br>
@@ -174,15 +245,35 @@
             <h3>Moon Lord</h3>
             <img src="images/bosses && guide/Moon_Lord.webp" width="300" height="325">
             <p>Es el jefe final del juego. Tras vencer al <span style="color: rgb(255, 255, 0);">Cultista
-                    Lunático</span><img src="images/bosses && guide/Lunatic_Cultist.gif" width="75" height="75">  en la Mazmorra y destruir los cuatro Pilares Lunares (Solar <img src="images/bosses && guide/Solar_Pillar.png" width="30" height="60"> , Vórtice <img src="images/bosses && guide/Vortex_Pillar.png" width="30" height="60">, Nebular <img src="images/bosses && guide/Nebula_Pillar.png" width="30" height="60"> y
-                Estelar  <img src="images/bosses && guide/Stardust_Pillar.png" width="30" height="60">), se invocará automáticamente. Es crucial contar con armas de largo alcance y una arena de
+                    Lunático</span><img src="images/bosses && guide/Lunatic_Cultist.gif" width="75" height="75"> en la
+                Mazmorra y destruir los cuatro Pilares Lunares (Solar <img src="images/bosses && guide/Solar_Pillar.png"
+                    width="30" height="60"> , Vórtice <img src="images/bosses && guide/Vortex_Pillar.png" width="30"
+                    height="60">, Nebular <img src="images/bosses && guide/Nebula_Pillar.png" width="30" height="60"> y
+                Estelar <img src="images/bosses && guide/Stardust_Pillar.png" width="30" height="60">), se invocará
+                automáticamente. Es crucial contar con armas de largo alcance y una arena de
                 combate bien diseñada.</p>
+            <br>
+            <h3><b style="color: rgb(119, 0, 255);">Luminite</b>- El mineral más poderoso, obtenido del Señor de la
+                Luna y aunque ya terminamos el juego con este mineral nos podremos chetar mas para seguir haciendo cosas
+                como matar jefes mas facilmente o conseguir el mejor taladro y con estas cosas podremos seguir avanzando
+                asta el infinito ya que terraria en realidad nunca termnina.</h3>
         </div>
         <footer>
-            Hecho por Franco Pedrazzi. Si quieres más información sobre Terraria, visita la 
+            Hecho por Franco Pedrazzi. Si quieres más información sobre Terraria, visita la
             <a href="https://terraria.fandom.com/wiki/Terraria_Wiki" target="_blank">wiki de Terraria</a>.
         </footer>
     </center>
+    <script>
+        var musica = document.getElementById("music");
+    
+        function music() {
+            if (musica.paused) {
+                musica.play();
+            } else {
+                musica.stop(); 
+            }
+        }
+    </script>
 </body>
 
 </html>
